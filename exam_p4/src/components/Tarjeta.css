@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding-left: 240px;
+  font-family: sans-serif;
+  background-image: url('../assets/fond.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+}
+
+.contenedor-tarjetas {
+  margin-left: 240px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.tarjeta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9 !important; 
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  /* 
+  width: 300px; 
+  background: rgba(255, 255, 255, 0.1); 
+  border-radius: 16px; 
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); 
+  backdrop-filter: blur(10px); 
+  color: white; 
+  font-family: 'Segoe UI', sans-serif; 
+  padding: 20px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.tarjeta-foto {
+  width: 100%;
+  height: 200px;
+  background-color: #eaeaea;
+}
+
+.tarjeta-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.tarjeta-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.tarjeta-info h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #333 !important; 
+}
+
+.tarjeta-info p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #666 !important; 
+}
